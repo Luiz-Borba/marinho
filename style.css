@@ -1,0 +1,173 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+body{
+  background-color: rgba(177, 161, 161, 0.156);
+}
+header {
+
+  width: 100%;
+  height: 150px;
+  background-color: rgb(236, 236, 16);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  -webkit-box-shadow: 5px 3px 43px 8px rgba(0,0,0,0.31);
+-moz-box-shadow: 5px 3px 43px 8px rgba(0,0,0,0.31);
+box-shadow: 5px 3px 43px 8px rgba(0,0,0,0.31);
+}
+
+#logo {
+  width: 250px;
+  height: 160px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+iframe{
+  margin-top: 20px;
+  -webkit-box-shadow: 5px 3px 43px 8px rgba(0,0,0,0.31);
+  -moz-box-shadow: 5px 3px 43px 8px rgba(0,0,0,0.31);
+  box-shadow: 5px 3px 43px 8px rgba(0,0,0,0.31);
+}
+
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#container-backend {
+  width: 210px;
+  height: 140px;
+  position: absolute;
+  left: 20vw;
+  top: 20vh;
+  perspective: 1000px;
+}
+
+#container-frontend {
+  width: 210px;
+  height: 140px;
+  margin-left: 35%;
+
+}
+
+#botoes {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.carousel {
+  width: 4em;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation-name: carrosel;
+  animation-duration: 16s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+.carousel:hover {
+  animation-duration: 6s;
+}
+
+@keyframes carrosel {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.carousel figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  left: 10px;
+  top: 10px;
+}
+
+.carousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(190px);
+}
+
+.carousel figure:nth-child(2) {
+  transform: rotateY(36deg) translateZ(190px);
+}
+
+.carousel figure:nth-child(3) {
+  transform: rotateY(72deg) translateZ(190px);
+}
+
+.carousel figure:nth-child(4) {
+  transform: rotateY(108deg) translateZ(190px);
+}
+
+.carousel figure:nth-child(5) {
+  transform: rotateY(144deg) translateZ(190px);
+  background: rgba(250, 250, 250, 1);
+}
+
+.carousel figure:nth-child(6) {
+  transform: rotateY(180deg) translateZ(190px);
+}
+
+.carousel figure:nth-child(7) {
+  transform: rotateY(216deg) translateZ(190px);
+}
+
+.carousel figure:nth-child(8) {
+  transform: rotateY(252deg) translateZ(190px);
+}
+
+.carousel figure:nth-child(9) {
+  transform: rotateY(288deg) translateZ(190px);
+}
+
+.carousel figure:nth-child(10) {
+  transform: rotateY(324deg) translateZ(190px);
+}
+
+
+
+.botao-whatsapp {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #0074c1;
+  /* Cor de fundo do botão */
+  color: #fff;
+  /* Cor do texto */
+  text-decoration: none;
+  /* Remove sublinhado padrão do link */
+  border: none;
+  /* Remove a borda padrão do botão */
+  border-radius: 5px;
+  /* Borda arredondada */
+  cursor: pointer;
+  /* Altera o cursor ao passar o mouse */
+  margin: 10px;
+  font-size: 25px;
+}
+
+.botao-whatsapp:hover {
+  background-color: #00579d;
+  /* Altera a cor de fundo ao passar o mouse */
+}
